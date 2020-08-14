@@ -1,0 +1,96 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.one{
+    height: 100vh;
+    overflow: hidden;
+}
+.blue{
+    background: lightblue;
+    
+}
+.coral{
+    background: lightpink;
+}
+
+.cyan{
+    background-color:lightcyan;
+}
+
+.purple{
+    background-color: lightslategray;
+}
+
+.layout{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.one .parent{
+    display: grid;
+    place-items: center;
+    width: 500px;
+    height: 500px;
+    
+    resize: both;
+    overflow: auto;
+}
+
+.one .child{
+    color:black;
+    font-weight: 500;
+    font-size: 32px;
+    outline: none;
+    border: solid 1px white;
+    border-radius: 10px;
+
+}
+
+.two .parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.two .child{
+    height: 200px;
+    flex: 1 1 150px;
+    flex: 0 1 150px;
+
+    margin: 20px;
+    
+}
+
+.three{
+    display: grid;
+    grid-template-columns: minmax(150px, 15%) 1fr;
+}
+.three .sidebar{
+    height: 50vh;
+}
+.three .content{
+    height: 50vh;
+    overflow: auto;
+    resize: both;
+}
+
+
+.four{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 50vh;
+    
+}
+.four .head{
+    height: 60px;
+
+}
+.four .footer{
+    height: 60px;
+
+}
+
+
+
