@@ -85,12 +85,40 @@ body{
 }
 .four .head{
     height: 60px;
-
+    resize: both;
+    overflow: auto;
+    
 }
 .four .footer{
     height: 60px;
+    resize: both;
+    overflow: auto;
 
 }
 
+.five{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
+}
 
+.five .head{
+    grid-column: 1/4;
+}
+
+.five .leftbar{
+    grid-column: 1/2;
+}
+
+
+.five .main{
+    grid-column: 2/3;
+}
+
+.five .rightbar{
+    grid-column: 3/4;
+}
+.five .footer{
+    grid-column: 1/4;
+}
 
