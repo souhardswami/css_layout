@@ -4,10 +4,7 @@ body{
     
 }
 
-.one{
-    height: 100vh;
-    overflow: hidden;
-}
+
 .blue{
     background: lightblue;
     
@@ -25,6 +22,11 @@ body{
 }
 
 .layout{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.one{
     height: 100vh;
     overflow: hidden;
 }
@@ -166,4 +168,54 @@ body{
 .eight .box{
     width: 200px;
     height: 200px;
+}
+
+
+.nine{
+    display: grid;
+    place-items: center;
+}
+
+.nine .card{
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+
+    resize: both;
+    overflow: auto;
+
+}
+
+.nine .card .box{
+
+    width: 90%;
+    height: 100px;
+
+}
+
+
+.ten{
+    display: grid;
+    place-items: center;
+}
+
+.ten .card{
+    width: 200px;
+    height: 250px;
+    
+    resize: both;
+    overflow: auto;
+
+}
+
+.ten .card .box{
+
+
+    width:200px;
+    height: 200px;
+    
+    
+    
+    aspect-ratio: 16/9;
+
 }
